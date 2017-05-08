@@ -1,5 +1,6 @@
 var set3 = require('./set3');
-const chai = require('chai');
+// const chai = require('chai');
+import chai from 'chai';
 var expect = chai.expect;
 
 describe('Set #3', function(){
