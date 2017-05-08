@@ -1,4 +1,5 @@
 var request = require('ajax-request');
+var cities = require( "./deck.json" );
 
 /************************
   Exercise 2: Difference of the sum squares
@@ -18,16 +19,15 @@ function sumSquareDiff(num){
 
 /************************
   Exercise 3: Sort out suites
-    1. Get a new deck of cards and get your deck id.
-    2.
+    To limit the massive number of API calls we would do, I've brought down a single deck to work with and stored it locally
+    but the data will be the same.
 
 ************************/
 
-function newDeck(){
-  var deck = request('https://deckofcardsapi.com/api/deck/13z4joiqeis0/draw/?count=52', function(err, res, body) { return body });
+function sortDeck(){
+
 }
 
-newDeck();
 
 /************************
   Ignore this below!

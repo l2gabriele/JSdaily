@@ -4,7 +4,13 @@ var expect = chai.expect;
 
 describe('Set #3', function(){
 
-  describe('Exercise 3: Sk-werd Noombers', function(){
+// TODO:  Simple javascript exercise
+  describe('Exercise 1: ?', function(){
+
+
+  });
+
+  describe('Exercise 2: Sk-werd Noombers', function(){
 
     it('should return a number.', function(){
       expect(set3.sumSquareDiff(10)).to.be.a('number');
@@ -20,4 +26,10 @@ describe('Set #3', function(){
 
   });
 
+  // TODO:  use deck maybe, sort by suit?
+
+  describe('Exercise 3: ?', function(){
+
+
+  });
 });
