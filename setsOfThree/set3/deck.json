@@ -1,17 +1,10 @@
-{
-remaining: 0,
-cards: [
-{
-code: "2H",
-image: "http://deckofcardsapi.com/static/img/2H.png",
-suit: "HEARTS",
-value: "2",
-images: {
-png: "http://deckofcardsapi.com/static/img/2H.png",
-svg: "http://deckofcardsapi.com/static/img/2H.svg"
-}
-},
-{
+[
+    {
+      code: "2H",
+      suit: "HEARTS",
+      value: "2",
+    },
+    {
 code: "9C",
 image: "http://deckofcardsapi.com/static/img/9C.png",
 suit: "CLUBS",

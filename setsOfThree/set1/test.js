@@ -3,10 +3,8 @@ const chai = require('chai');
 var expect = chai.expect;
 
 describe('Set #1', function(){
-
   describe('returnWhatYearYouWereBorn', function(){
     it('should return a number',function() {
-      var value = yearBorn.;
       expect(set1.returnWhatYearYouWereBorn(35)).to.be.a('number');
     });
 
@@ -20,10 +18,10 @@ describe('Set #1', function(){
       expect(set1.returnOnlyCitiesThatStartWith('c').length).toBe(95);
     });
     it('The last city in the array should by Calument City',function() {
-      expect(set1.returnOnlyCitiesThatStartWith('c').toBe('Calumet City');
+      expect(set1.returnOnlyCitiesThatStartWith('c')).toBe('Calumet City');
     });
     it('The first city in the array should by Chicago',function() {
-      expect(set1.returnOnlyCitiesThatStartWith('c').toBe('Chicago');
+      expect(set1.returnOnlyCitiesThatStartWith('c')).toBe('Chicago');
     });
   });
 
