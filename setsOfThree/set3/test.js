@@ -1,6 +1,6 @@
-var set3 = require('./set3');
+const set3 = require('./set3');
 import chai from 'chai';
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('Set #3', function(){
 
@@ -34,10 +34,21 @@ describe('Set #3', function(){
   });
 
   describe('Exercise 3: Royal', function(){
-
+    let set3Arr = set3.spadesRoyalStraightFlush();
+    let pickOne = Math.floor((Math.random() * 5) + 1);
     it('should return a array', function(){
       expect(set3.spadesRoyalStraightFlush()).to.be.a('array');
     });
-    // TODO: write test for the card sets
+
+    it('returned array should be 5 items long', function(){
+      expect(set3Arr).to.have.length(5);
+    });
+    it('a random card picked from your flush should contain keys: code, image, images, suit, value', function(){
+      expect(set3Arr[pickOne]).to.have.all.keys('code', 'image', 'images', 'suit', 'value');
+    });
+    it('the last card in your flush should be an ACE', function(){
+      expect(set3Arr[set3Arr.length-1].value).to.eql("ACE");
+    });
+
   });
 });
