@@ -43,7 +43,7 @@ function sumSquareDiff(num){
 ************************/
 
 function spadesRoyalStraightFlush(){
-   return deck.cards.filter((v) => v.suit === "SPADES" && v.value.length > 1);
+   
 }
 
 /************************
