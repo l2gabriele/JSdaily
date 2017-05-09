@@ -1,11 +1,18 @@
-var request = require('ajax-request');
-var deck = require( "./deck.json" );
+import request from 'ajax-request';
+import deck from './deck.json';
 
 /************************
-  Quick Note:  We are not yet using ES6 
+    you ->should<-  be able to use ES6 syntax
+************************/
 
-  ***********************/
+/***********************
+  Exercise 1: This function should check to see if a string is a question,
+   if the string is a question it should return false
+***********************/
 
+function neverQuestion(str){
+
+}
 
 /************************
   Exercise 2: Difference of the sum squares
@@ -30,17 +37,22 @@ function sumSquareDiff(num){
       request('url', function(err, res, body) {});
     To limit the massive number of API calls, I've included a dataset as a json object which you can use
       as deck, i.e. deck.map();
+    This function should return an array that holds within it a set of objects that hold an "image", "suit", "value"
+    All suit keys should be spades
+    The values should be an ascending straight flush.
 ************************/
 
-function sortDeck(){
-
+function spadesRoyalStraightFlush(){
+   return deck.cards;
 }
-
 
 /************************
   Ignore this below!
 ************************/
 
 module.exports = {
+     neverQuestion: neverQuestion,
      sumSquareDiff: sumSquareDiff,
+     spadesRoyalStraightFlush: spadesRoyalStraightFlush
+
 }
