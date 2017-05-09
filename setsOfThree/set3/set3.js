@@ -1,5 +1,11 @@
 var request = require('ajax-request');
-var cities = require( "./deck.json" );
+var deck = require( "./deck.json" );
+
+/************************
+  Quick Note:  We are not yet using ES6 
+
+  ***********************/
+
 
 /************************
   Exercise 2: Difference of the sum squares
@@ -18,10 +24,12 @@ function sumSquareDiff(num){
 }
 
 /************************
-  Exercise 3: Sort out suites
-    To limit the massive number of API calls we would do, I've brought down a single deck to work with and stored it locally
-    but the data will be the same.
-
+  Exercise 3: Royal Straight Flush, All Spades
+    There are two different ways to solve this problem, you could use API calls if you like, there is a request library
+    included for this purpose use it like this:
+      request('url', function(err, res, body) {});
+    To limit the massive number of API calls, I've included a dataset as a json object which you can use
+      as deck, i.e. deck.map();
 ************************/
 
 function sortDeck(){
