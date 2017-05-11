@@ -1,5 +1,5 @@
-var cities = require( "./cities.json" );
-var exports = module.exports = {};
+import cities from '../../resources/cities.json';
+const exports = module.exports = {};
 
 
 // TODO:  check rewrites on mocha tests
