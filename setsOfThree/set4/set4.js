@@ -1,32 +1,25 @@
 import request from 'ajax-request';
 import deck from '../../resources/deck.json';
+import cities from '../../resources/cities.json';
 
 /************************
-    you ->should<-  be able to use ES6 syntax
+  Exercise 1: Return the age of your pup in dog years
+  Given the human years of a dog, return the dog years of a dog with a number
 ************************/
 
-/***********************
-  Exercise 1: This function should check to see if a string is a question,
-   if the string is a question it should return false
-***********************/
-
-function neverQuestion(str){
+function pupCalc(){
 
 }
 
-/************************
-  Exercise 2: Difference of the sum squares
+/***********************
+  Exercise 2: This function takes 4 arguments: age, average age at death, amount per day, type of snack
+    calculates the amount consumed for rest of the life
+    you returned value should be an object that holds years of life left as "years", amount of total snacks consumed as "total",
+    and a user output as "readable" that equals:
+       "You will need N of T to last you until the ripe old age of X"
+***********************/
 
-  The sum of the squares of the first ten natural numbers is,
-    1(sq) + 2(sq) + ... + 10(sq) = 385
-  The square of the sum of the first ten natural numbers is,
-    (1 + 2 + ... + 10)2 = 552 = 3025
-  Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 − 385 = 2640.
-
-  Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
-************************/
-
-function sumSquareDiff(num){
+function lifetimeSupply(){
 
 }
 
@@ -51,8 +44,7 @@ function spadesRoyalStraightFlush(){
 ************************/
 
 module.exports = {
-     neverQuestion: neverQuestion,
-     sumSquareDiff: sumSquareDiff,
+     lifetimeSupply: lifetimeSupply,
+     pupCalc: pupCalc,
      spadesRoyalStraightFlush: spadesRoyalStraightFlush
-
 }
