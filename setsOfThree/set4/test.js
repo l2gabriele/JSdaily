@@ -40,22 +40,9 @@ describe('Set #4', function(){
     });
   });
 
-  // describe('Exercise 3: Royal', function(){
-  //   let set3Arr = set3.spadesRoyalStraightFlush();
-  //   let pickOne = Math.floor((Math.random() * 5) + 1);
-  //   it('should return a array', function(){
-  //     expect(set3.spadesRoyalStraightFlush()).to.be.a('array');
-  //   });
-  //
-  //   it('returned array should be 5 items long', function(){
-  //     expect(set3Arr).to.have.length(5);
-  //   });
-  //   it('a random card picked from your flush should contain keys: code, image, images, suit, value', function(){
-  //     expect(set3Arr[pickOne]).to.have.all.keys('code', 'image', 'images', 'suit', 'value');
-  //   });
-  //   it('the last card in your flush should be an ACE', function(){
-  //     expect(set3Arr[set3Arr.length-1].value).to.eql("ACE");
-  //   });
-  //
-  // });
+  describe('Exercise 3: Palindromes', function(){
+    it('This function accepts a string, and must return true or false if the string is a palindrome', function(){
+      expect(set4.isPalindrome("racecar")).to.eql(true);
+    });
+  });
 });

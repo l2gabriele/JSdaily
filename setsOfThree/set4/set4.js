@@ -23,19 +23,11 @@ function lifetimeSupply(){
 
 }
 
-/************************
-  Exercise 3: Royal Straight Flush, All Spades
-    There are two different ways to solve this problem, you could use API calls if you like, there is a request library
-    included for this purpose use it like this:
-      request('url', function(err, res, body) {});
-    To limit the massive number of API calls, I've included a dataset as a json object which you can use
-      as deck, i.e. deck.map();
-    This function should return an array that holds within it a set of objects that hold an "image", "suit", "value"
-    All suit keys should be spades
-    The values should be an ascending straight flush.
-************************/
+/***********************
+  Exercise 3: Write a function that accepts a string, and returns true if the string is a palindrome
+***********************/
 
-function spadesRoyalStraightFlush(){
+function isPalindrome(){
 
 }
 
@@ -46,5 +38,5 @@ function spadesRoyalStraightFlush(){
 module.exports = {
      lifetimeSupply: lifetimeSupply,
      pupCalc: pupCalc,
-     spadesRoyalStraightFlush: spadesRoyalStraightFlush
+     isPalindrome: isPalindrome
 }
