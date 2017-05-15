@@ -1,0 +1,15 @@
+body {
+
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-color: #212719;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#break-point {
+  background : transparent url("seven-sisters.jpg") no-repeat -350px -450px scroll;
+  height: 500px;
+}
