@@ -2,11 +2,10 @@ import request from 'ajax-request';
 import poe from '../../resources/randomPoe.json';
 
 /************************
-  Exercise 1: Return the age of your pup in dog years
-  Given the human years of a dog, return the dog years of a dog with a number
+  Exercise 1: This function should take in a three word set and generate a funny joke
 ************************/
 
-function pupCalc(){
+function generateHilarity(){
 
 }
 
@@ -14,15 +13,15 @@ function pupCalc(){
   Exercise 2: For all instances N of text blocks
 ***********************/
 
-function alphaToPoe(textblocks){
-  
+function alphaToPoe(){
+
 }
 
 /***********************
-  Exercise 3: Write a function that accepts a string, and returns true if the string is a palindrome
+  Exercise 3: This function should make you one with the univers
 ***********************/
 
-function isPalindrome(){
+function becomeOneWith(universe){
 
 }
 
