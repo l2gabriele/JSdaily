@@ -2,47 +2,39 @@ const set5 = require('./set5');
 import chai from 'chai';
 const expect = chai.expect;
 
-describe('Set #4', function(){
+describe('Set #5', function () {
 
-  describe('Exercise 1: pupCalc', function(){
-
-    it('should return a number', function(){
-      expect(set4.pupCalc(4)).to.be.a('number');
-    });
-
-    it('should return the age of your puppy in dog years', function(){
-      expect(set4.pupCalc(4)).to.eql(28);
-    });
-
-  });
-
-  describe('Exercise 2: Lifetime Supply', function() {
-
-    const answer = set4.lifetimeSupply(29, 90, 1, "candy BBAaaaaRRss");
-    it('should return an object', function(){
-      expect(answer).to.be.an('object');
-    });
-
-    it('the returned object should have the keys year, total, and readable', function(){
-      expect(answer).to.have.all.keys('years', 'total', 'readable');
-    });
-
-    it('the year field should be equal to the total number of years yet to be lived', function(){
-      expect(answer.years).to.eql(55);
-    });
-
-    it('the total field should equal the total number of snacks to be consumed', function(){
-      expect(answer.total).to.eql(20075);
-    });
-
-    it('the total field should equal the total number of snacks to be consumed', function(){
-      expect(answer.readable).to.be.an('string');
-    });
-  });
-
-  describe('Exercise 3: Palindromes', function(){
+  describe('Exercise 1: Palindromes', function(){
     it('This function accepts a string, and must return true or false if the string is a palindrome', function(){
-      expect(set4.isPalindrome("racecar")).to.eql(true);
+      expect(set5.isPalindrome("racecar")).to.eql(true);
+    });
+  });
+
+  describe('Exercise 2: Factorial', function(){
+    it('This function takes in a number, and it must return the factorial of the number.', function(){
+      expect(set5.factorial(5)).to.eql(120);
+    });
+  });
+
+  describe('Exercise 3: Simple Calculator ', function(){
+    it('should return an object', function(){
+      expect(set5.createCalc("divide", 4, 2)).to.be.an('object');
+    });
+
+    it('the returned object should have the keys output and readable', function(){
+      expect(set5.createCalc("divide", 4, 2)).to.have.all.keys('output', 'readable');
+    });
+
+    it('the calculations should be correct, i.e. 20 divided by 4 should equal 5', function(){
+      expect(set5.createCalc("divide", 20, 4).output).to.eql(5);
+    });
+
+    it('if there is an an error present in the system the ouput should contain an err key', function(){
+      expect(set5.createCalc("divide", "d", 4)).to.have.key('err');
+    });
+
+    it('the returned object should have a human readable output that is a string', function(){
+      expect(set5.createCalc("divide", 20, 4).readable).to.be.a('string');
     });
   });
 });

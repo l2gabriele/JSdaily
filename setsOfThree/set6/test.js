@@ -6,12 +6,25 @@ describe('Set #6', function(){
 
   describe('Exercise 1: pupCalc', function(){
 
-    it('should return a number', function(){
-      expect(set4.pupCalc(4)).to.be.a('number');
+    const answer = set5.createCalc("A");
+    it('should return an object', function(){
+      expect(answer).to.be.an('object');
     });
 
-    it('should return the age of your puppy in dog years', function(){
-      expect(set4.pupCalc(4)).to.eql(28);
+    it('the returned object should have the keys year, total, and readable', function(){
+      expect(answer).to.have.all.keys('years', 'total', 'readable');
+    });
+
+    it('the year field should be equal to the total number of years yet to be lived', function(){
+      expect(answer.years).to.eql(55);
+    });
+
+    it('the total field should equal the total number of snacks to be consumed', function(){
+      expect(answer.total).to.eql(20075);
+    });
+
+    it('the total field should equal the total number of snacks to be consumed', function(){
+      expect(answer.readable).to.be.an('string');
     });
 
   });
