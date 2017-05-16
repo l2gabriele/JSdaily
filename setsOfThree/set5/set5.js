@@ -43,15 +43,20 @@ function createCalc(calc, num1, num2){
 };
 
 /***********************
-  Exercise 2: This function takes 4 arguments: age, average age at death, amount per day, type of snack
-    calculates the amount consumed for rest of the life
-    you returned value should be an object that holds years of life left as "years", amount of total snacks consumed as "total",
-    and a user output as "readable" that equals:
-       "You will need N of T to last you until the ripe old age of X"
+  Exercise 2: Recursive Factorial
+
+  Write a recursive function to calculate the factorial of a number.
+  In mathematics, the factorial of a non-negative integer n, denoted by n!,
+  is the product of all positive integers less than or equal to n.
+
+  For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
 ***********************/
 
-function lifetimeSupply(){
-
+function factorial(x){
+  if(x === 0){
+    return true;
+  }
+  return x * factorial(x-1);
 }
 
 /***********************
@@ -59,7 +64,8 @@ function lifetimeSupply(){
 ***********************/
 
 function isPalindrome(){
-
+  str = str.replace(/\W/g, '').toLowerCase();
+  return (str == str.split('').reverse().join(''));
 }
 
 /************************
@@ -67,7 +73,7 @@ function isPalindrome(){
 ************************/
 
 module.exports = {
-     lifetimeSupply: lifetimeSupply,
-     pupCalc: pupCalc,
+     createCalc: createCalc,
+     factorial: factorial,
      isPalindrome: isPalindrome
 }
