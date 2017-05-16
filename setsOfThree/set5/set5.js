@@ -2,8 +2,20 @@ import request from 'ajax-request';
 import deck from '../../resources/deck.json';
 import cities from '../../resources/cities.json';
 
+/***********************
+  Exercise 1: This function takes 4 arguments: age, average age at death, amount per day, type of snack
+    calculates the amount consumed for rest of the life
+    you returned value should be an object that holds years of life left as "years", amount of total snacks consumed as "total",
+    and a user output as "readable" that equals:
+       "You will need N of T to last you until the ripe old age of X"
+***********************/
+
+function lifetimeSupply(){
+
+}
+
 /************************
-  Exercise 1: This function will create a simple calculator, it should be able
+  Exercise 2: This function will create a simple calculator, it should be able
   to add subtract and divide.  The returned object of the calculator should have
   a human readable output field called "readable" and a output of the calculation
   called "output".  If either of the two number parameters are not numbers the object
@@ -11,7 +23,7 @@ import cities from '../../resources/cities.json';
   "number 1 is not a number"
 ************************/
 
-function createCalc(calc, num1, num2){
+function simpleCalc(calc, num1, num2){
   let operation = '';
   let obj = {};
 
@@ -43,18 +55,6 @@ function createCalc(calc, num1, num2){
 };
 
 /***********************
-  Exercise 2: This function takes 4 arguments: age, average age at death, amount per day, type of snack
-    calculates the amount consumed for rest of the life
-    you returned value should be an object that holds years of life left as "years", amount of total snacks consumed as "total",
-    and a user output as "readable" that equals:
-       "You will need N of T to last you until the ripe old age of X"
-***********************/
-
-function lifetimeSupply(){
-
-}
-
-/***********************
   Exercise 3: Write a function that accepts a string, and returns true if the string is a palindrome
 ***********************/
 
@@ -67,7 +67,5 @@ function isPalindrome(){
 ************************/
 
 module.exports = {
-     lifetimeSupply: lifetimeSupply,
-     pupCalc: pupCalc,
-     isPalindrome: isPalindrome
+     simpleCalc: simpleCalc
 }
