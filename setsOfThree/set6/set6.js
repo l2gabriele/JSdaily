@@ -19,14 +19,32 @@ function titleCase(string){
 ***********************/
 
 function alphaToPoe(poe){
-  
+
 }
 
 /***********************
-  Exercise 3: This function should make you one with the univers
+  Exercise 3: Take in a number in 8bit binary, then calculate and return it as a simple number
+
+  Hints:
+  [2^8,2^7,2^6,2^5,2^4,2^3,2^2,2^1]
+
+  1 through 10 in binary (integer on left, binary on right):
+
+  0  | 0
+  1  | 1
+  2  | 10
+  3  | 11
+  4  | 100
+  5  | 101
+  6  | 110
+  7  | 111
+  8  | 1000
+  9  | 1001
+  10 | 1010
+
 ***********************/
 
-function becomeOneWith(universe){
+function numberFromBinary(binary){
 
 }
 
@@ -37,4 +55,5 @@ function becomeOneWith(universe){
 module.exports = {
       titleCase: titleCase,
      alphaToPoe: alphaToPoe,
+     numberFromBinary: numberFromBinary
 }

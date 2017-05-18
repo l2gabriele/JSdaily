@@ -30,4 +30,14 @@ describe('Set #6', () => {
       expect(set6.alphaToPoe(poe)).to.eql(ans);
     });
   });
+
+  describe('Exercise 3: Calculate a number from binary', function(){
+    it('This function must return a number', () => {
+      expect(set6.numberFromBinary('1011')).to.be.an("number");
+    });
+
+    it('This function should properly calculate a value based on its binary representation', function(){
+      expect(set6.numberFromBinary('1011')).to.eql(11);
+    })
+  });
 });
