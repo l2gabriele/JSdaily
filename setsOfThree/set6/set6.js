@@ -2,19 +2,24 @@ import request from 'ajax-request';
 import poe from '../../resources/randomPoe.json';
 
 /************************
-  Exercise 1: This function should take in a three word set and generate a funny joke
+  Exercise 1: This function should take in a string that is a city name
+   with any number of upper and lowercase letters and sanitize the string
+   for numbers, and all these characters:  "," : "." : "?".  The returned
+   string should be Title Cased, i.e.  ",doDge citY" -> "Dodge City"
 ************************/
 
-function generateHilarity(){
-
+function titleCase(string){
+  return string;
 }
 
 /***********************
-  Exercise 2: For all instances N of text blocks
+  Exercise 2: Take in a block of random words used by Edgar Allen Poe.  The
+  block is an array of objects with a key "text" and value of the word collection.
+  Your function should return an array with only the a words.
 ***********************/
 
-function alphaToPoe(){
-
+function alphaToPoe(poe){
+  
 }
 
 /***********************
@@ -30,5 +35,6 @@ function becomeOneWith(universe){
 ************************/
 
 module.exports = {
+      titleCase: titleCase,
      alphaToPoe: alphaToPoe,
 }
