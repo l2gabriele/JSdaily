@@ -7,6 +7,19 @@ chai.should();
 chai.use(things);
 
 describe('Set #7', () => {
+  describe('Exercise 1: Does it has all the letters?', function(){
+    it('This function must return a boolean', () => {
+      expect(set7.allLetters(["monokey", "monkey"])).to.be.a("boolean");
+    });
+    it('If it does not have all the letters it should return false', () => {
+      expect(set7.allLetters(["monarchy", "bleh"])).to.eql(false);
+    });
+    it('If it does not have all the letters it should return true', () => {
+      expect(set7.allLetters(["monokey", "monkey"])).to.eql(true);
+    });
+  });
+
+
   describe('Exercise 2: The problem with strings', function(){
     it('This function must return an array', () => {
       expect(set7.theProblemWithStrings(cities)).to.be.an("array");
@@ -22,11 +35,6 @@ describe('Set #7', () => {
   });
 
   describe('Exercise 3: What is your best day according to Wakatime?', function(){
-    it('This function must return an object', () => {
-      expect(set7.whatsUrBestDay()).to.be.an("object");
-    });
-    it('The error field of this object should be null', () => {
-      expect(set7.whatsUrBestDay().error).to.eql(null);
-    });
+    
   });
 });

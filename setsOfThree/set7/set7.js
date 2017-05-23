@@ -1,10 +1,17 @@
 import request from 'request';
 import rp from  'request-promise';
 import cities from '../../resources/cities.json';
+import deck from '../../resources/deck.json';
 
 /***********************
-  Exercise 1:
+  Exercise 1: This function takes in an array with two strings.  The first string
+  is compared to the second.  If the second string does not have all the same
+  letters as the first string, return false, else return true.
 ***********************/
+
+function allLetters(arr) {
+
+}
 
 /************************
   Exercise 2: This function should take in the cities array and sort based on two
@@ -18,32 +25,14 @@ function theProblemWithStrings(citiesArr){
 };
 
 /***********************
-  Exercise 3:
-
+  Exercise 3:  draw three random cards from the deck, calculate the chances
+  that one of these cards will be the king of spades, return the chances as
+  a percentage, number, i.e. 0.25.
 ***********************/
 
-function whatsUrBestDay(){
-      let options = {
-        uri: 'https://wakatime.com/api/v1/users/current/stats/last_7_days',
-        qs: {
-            access_token: '6614618d-bdab-4d22-9fe1-9f6d15a3cfa0'
-        },
-        headers: {
-            'User-Agent': 'Request-Promise'
-        },
-        json: true // Automatically parses the JSON string in the response
-      };
-      
-      rp(options)
-        .then(function (repos) {
-            console.log('User has %d repos', repos);
-        })
-        .catch(function (err) {
-            // API call failed...
-        });
-  }
+function kingMe(deck){
 
-  whatsUrBestDay();
+};
 
 /************************
   Ignore this below!
@@ -51,5 +40,6 @@ function whatsUrBestDay(){
 
 module.exports = {
       theProblemWithStrings: theProblemWithStrings,
-      whatsUrBestDay: whatsUrBestDay,
+      allLetters: allLetters,
+      kingMe: kingMe
 }
