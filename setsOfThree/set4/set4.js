@@ -1,4 +1,3 @@
-import request from 'ajax-request';
 import deck from '../../resources/deck.json';
 import cities from '../../resources/cities.json';
 

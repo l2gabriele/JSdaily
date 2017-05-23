@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "mocha:run": "mocha --compilers js:babel-core/register"
+    "mocha:run": "mocha --compilers js:babel-core/register",
+    "mocha:daily": "mocha --compilers js:babel-core/register setsOfThree/set7/test.js",
+    "prototype:daily": "babel-node setsOfThree/set7/set7.js"
   },
   "repository": {
     "type": "git",
@@ -18,14 +19,17 @@
   },
   "homepage": "https://github.com/Montana-Code-School/JSdaily#readme",
   "devDependencies": {
-    "ajax-request": "^1.2.1",
     "babel": "^6.23.0",
     "babel-core": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
+    "body-parser": "^1.17.2",
     "chai": "^3.5.0",
-    "mocha": "^3.3.0"
+    "chai-things": "^0.2.0",
+    "mocha": "^3.3.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
   },
   "dependencies": {
     "ajax-request": "^1.2.1",

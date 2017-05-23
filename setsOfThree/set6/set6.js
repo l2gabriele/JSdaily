@@ -1,4 +1,3 @@
-import request from 'ajax-request';
 import poe from '../../resources/randomPoe.json';
 
 /************************
