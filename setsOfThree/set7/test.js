@@ -34,7 +34,15 @@ describe('Set #7', () => {
     });
   });
 
-  describe('Exercise 3: What is your best day according to Wakatime?', function(){
-    
+  describe('Exercise 3: Is this gramma panna?', function(){
+    it('This function must return a boolean', () => {
+      expect(set7.panTheGram("The quick brown fox jumps over the lazy dog.")).to.be.a("boolean");
+    });
+    it('A pangrammatic sentence should return true', () => {
+      expect(set7.panTheGram("The quick brown fox jumps over the lazy dog.")).to.eql(true);
+    });
+    it('A non-pangrammatic sentence should return false', () => {
+      expect(set7.panTheGram("The quick brown fox jumps over the lay dog.")).to.eql(false);
+    });
   });
 });

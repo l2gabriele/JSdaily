@@ -11,12 +11,14 @@ function titleCase(string){
 }
 
 /***********************
-  Exercise 2:
+  Exercise 2:  draw three random cards from the deck, calculate the chances
+  that one of these cards will be the king of spades, return the chances as
+  a percentage, number, i.e. 0.25.
 ***********************/
 
-function alphaToPoe(poe){
+function kingMe(deck){
 
-}
+};
 
 /***********************
   Exercise 3:
@@ -51,5 +53,5 @@ function whatsUrBestDay(){
 module.exports = {
      titleCase: titleCase,
      whatsUrBestDay: whatsUrBestDay,
-     numberFromBinary: numberFromBinary
+     kingMe: kingMe
 }

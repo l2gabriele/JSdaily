@@ -25,13 +25,11 @@ function theProblemWithStrings(citiesArr){
 };
 
 /***********************
-  Exercise 3:  draw three random cards from the deck, calculate the chances
-  that one of these cards will be the king of spades, return the chances as
-  a percentage, number, i.e. 0.25.
+  Exercise 3:  Determine is a sentence is a pangram
 ***********************/
 
-function kingMe(deck){
-
+function panTheGram(text){
+  
 };
 
 /************************
@@ -41,5 +39,5 @@ function kingMe(deck){
 module.exports = {
       theProblemWithStrings: theProblemWithStrings,
       allLetters: allLetters,
-      kingMe: kingMe
+      panTheGram: panTheGram
 }
