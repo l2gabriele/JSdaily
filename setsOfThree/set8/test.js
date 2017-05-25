@@ -1,23 +1,43 @@
 import chai from 'chai';
-import poe from '../../resources/randomPoe.json';
+import things from 'chai-things';
+import deck from '../../resources/deck.json';
 const set8 = require('./set8');
 const expect = chai.expect;
+chai.should();
+chai.use(things);
 
 describe('Set #8', () => {
-  describe('Exercise 1: ', function(){
-
-  });
-
-  describe('Exercise 2: ', function(){
-
-  });
-
-  describe('Exercise 3: What is your best day according to Wakatime?', function(){
-    it('This function must return an object', () => {
-      expect(set7.whatsUrBestDay()).to.be.an("object");
+  describe('Exercise 1: Should return the time', function(){
+    it('Should take in a new date Object and return a formatted string', () => {
+      expect(set8.aintNobody(new Date())).to.be.an("string");
     });
-    it('The error field of this object should be null', () => {
-      expect(set7.whatsUrBestDay().error).to.eql(null);
+    it('Your string should be 8 chars long', () => {
+      expect(set8.aintNobody(new Date()).length).to.eql(8);
+    });
+    it('If Split at the colons the first element should equal hours in a new date', () => {
+      let d = new Date();
+      expect(set8.aintNobody(d).split(":")[0]).to.eql(d.getHours());
+    });
+  });
+
+  describe('Exercise 2: Whats your best day?', function(){
+    xit('Should run in the console', () => {
+    });
+    xit('With console.log', () => {
+    });
+    xit('You know that thing the logs to the console', () => {
+    });
+  });
+
+  describe('Exercise 3: Three random cards', function(){
+    it('This function must return an array', () => {
+      expect(set8.tresRando(deck)).to.be.an("array");
+    });
+    it('The length of the returned array should equal 3', () => {
+      expect(set8.tresRando(deck).length).to.eql(3);
+    });
+    it("Each object within the array should have keys: 'suit', 'code', 'image', 'images', 'value'", () => {
+      expect(set8.tresRando(deck)).to.have.all.keys('suit', 'code', 'image', 'images', 'value');
     });
   });
 });
