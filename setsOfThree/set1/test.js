@@ -15,20 +15,19 @@ describe('Set #1', function(){
 
   describe('returnOnlyCitiesThatStartWith',function(){
     it('This function should return an array that is 95 elements long',function() {
-      expect(set1.returnOnlyCitiesThatStartWith('c').length).toBe(95);
+      expect(set1.returnOnlyCitiesThatStartWith('c').length).to.eql(95);
     });
     it('The last city in the array should by Calument City',function() {
-      expect(set1.returnOnlyCitiesThatStartWith('c')).toBe('Calumet City');
+      expect(set1.returnOnlyCitiesThatStartWith('c').slice(-1)).to.eql('Calumet City');
     });
     it('The first city in the array should by Chicago',function() {
-      expect(set1.returnOnlyCitiesThatStartWith('c')).toBe('Chicago');
+      expect(set1.returnOnlyCitiesThatStartWith('c')[0]).to.eql('Chicago');
     });
   });
 
   describe('returnSumOfPrimes',function(){
     it('This function should return the sum of all primes below 200000',function() {
-      expect(set1.returnSumOfPrimes(2000000)).toBe(142913828922);
+      expect(set1.returnSumOfPrimes(2000000)).to.eql(142913828922);
     });
   });
-
 });
