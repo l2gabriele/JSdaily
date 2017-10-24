@@ -18,7 +18,7 @@ describe('Set #1', function(){
       expect(set1.returnOnlyCitiesThatStartWith('c').length).to.eql(95);
     });
     it('The last city in the array should by Calument City',function() {
-      expect(set1.returnOnlyCitiesThatStartWith('c').slice(-1)).to.eql('Calumet City');
+      expect(set1.returnOnlyCitiesThatStartWith('c').slice(-1)[0]).to.eql('Calumet City');
     });
     it('The first city in the array should by Chicago',function() {
       expect(set1.returnOnlyCitiesThatStartWith('c')[0]).to.eql('Chicago');
