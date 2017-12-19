@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npm run mocha",
     "mocha:run": "mocha --compilers js:babel-core/register",
-    "mocha:daily": "mocha --compilers js:babel-core/register setsOfThree/set7/test.js",
-    "prototype:daily": "babel-node setsOfThree/set7/set7.js"
+    "mocha:daily": "mocha --compilers js:babel-core/register setsOfThree/set1/test.js",
+    "prototype:daily": "babel-node setsOfThree/set1/set1.js"
   },
   "repository": {
     "type": "git",
