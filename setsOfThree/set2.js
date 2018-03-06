@@ -1,3 +1,5 @@
+const exports = module.exports = {};
+
 /************************
   Exercise 1: Get Number of Digits
 
@@ -7,7 +9,7 @@
   I.E: getDigits(199) should return 3
 ************************/
 
-function getDigits(number){
+exports.getDigits = (number) => {
 
 }
 
@@ -18,7 +20,7 @@ function getDigits(number){
   When the string is returned it must have 0 instead ' '
 ************************/
 
-function zeroString(string){
+exports.zeroString = (string) => {
 
 }
 
@@ -32,16 +34,6 @@ function zeroString(string){
   I.E: [1,2,3,4,5,6,7,8,9,10]
 ************************/
 
-function flatten(array){
+exports.flatten = (array) => {
 
-}
-
-/************************
-  Ignore this below!
-************************/
-
-module.exports = {
-  zeroString: zeroString,
-  flatten: flatten,
-  getDigits: getDigits
 }

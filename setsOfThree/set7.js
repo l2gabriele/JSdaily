@@ -1,7 +1,8 @@
 import request from 'request';
 import rp from  'request-promise';
-import cities from '../../resources/cities.json';
-import deck from '../../resources/deck.json';
+import cities from '../resources/cities.json';
+import deck from '../resources/deck.json';
+const exports = module.exports = {};
 
 /***********************
   Exercise 1: This function takes in an array with two strings.  The first string
@@ -9,7 +10,7 @@ import deck from '../../resources/deck.json';
   letters as the first string, return false, else return true.
 ***********************/
 
-function allLetters(arr) {
+exports.allLetters = (arr) => {
 
 }
 
@@ -20,7 +21,7 @@ function allLetters(arr) {
     2. Population under 100,000 people.
 ************************/
 
-function theProblemWithStrings(citiesArr){
+exports.theProblemWithStrings = (citiesArr) => {
 
 };
 
@@ -28,16 +29,6 @@ function theProblemWithStrings(citiesArr){
   Exercise 3:  Determine is a sentence is a pangram
 ***********************/
 
-function panTheGram(text){
-  
+exports.panTheGram = (text) => {
+
 };
-
-/************************
-  Ignore this below!
-************************/
-
-module.exports = {
-      theProblemWithStrings: theProblemWithStrings,
-      allLetters: allLetters,
-      panTheGram: panTheGram
-}

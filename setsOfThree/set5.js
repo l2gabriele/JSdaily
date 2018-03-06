@@ -1,5 +1,6 @@
-import deck from '../../resources/deck.json';
-import cities from '../../resources/cities.json';
+import deck from '../resources/deck.json';
+import cities from '../resources/cities.json';
+const exports = module.exports = {};
 
 /***********************
   Exercise 1: Recursive Factorial
@@ -11,7 +12,7 @@ import cities from '../../resources/cities.json';
   For example, 5! = 5 x 4 x 3 x 2 x 1 = 120
 ***********************/
 
-function factorial(){
+exports.factorial = () => {
 
 }
 
@@ -19,7 +20,7 @@ function factorial(){
   Exercise 2: Write a function that accepts a string, and returns true if the string is a palindrome
 ***********************/
 
-function isPalindrome(){
+exports.isPalindrome = () => {
 
 }
 
@@ -37,16 +38,6 @@ function isPalindrome(){
 
 ************************/
 
-function createCalc(){
+exports.createCalc = () => {
 
 };
-
-/************************
-  Ignore this below!
-************************/
-
-module.exports = {
-     createCalc: createCalc,
-     factorial: factorial,
-     isPalindrome: isPalindrome
-}

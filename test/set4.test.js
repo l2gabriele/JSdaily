@@ -1,16 +1,15 @@
-const set4 = require('./set4');
+const set4 = require('../setsOfThree/set4');
 import chai from 'chai';
 const expect = chai.expect;
 
-describe('Set #4', function(){
-
+xdescribe('Set #4', function(){
   describe('Exercise 1: pupCalc', function(){
 
-    it('should return a number', function(){
+    xit('should return a number', function(){
       expect(set4.pupCalc(4)).to.be.a('number');
     });
 
-    it('should return the age of your puppy in dog years', function(){
+    xit('should return the age of your puppy in dog years', function(){
       expect(set4.pupCalc(4)).to.eql(28);
     });
 

@@ -1,17 +1,15 @@
-const set3 = require('./set3');
+const set3 = require('../setsOfThree/set3');
 import chai from 'chai';
 const expect = chai.expect;
 
-describe('Set #3', function(){
-
-
+xdescribe('Set #3', function(){
   describe('Exercise 1: Never a question in my mind', function(){
 
-    it('should return a boolean', function(){
+    xit('should return a boolean', function(){
       expect(set3.neverQuestion('string')).to.be.a('boolean');
     });
 
-    it('if the string is a question it should return false', function(){
+    xit('if the string is a question it should return false', function(){
       expect(set3.neverQuestion('string?')).to.eql(false);
     });
 

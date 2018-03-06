@@ -1,12 +1,13 @@
-import deck from '../../resources/deck.json';
-import cities from '../../resources/cities.json';
+import deck from '../resources/deck.json';
+import cities from '../resources/cities.json';
+const exports = module.exports = {};
 
 /************************
   Exercise 1: Return the age of your pup in dog years
   Given the human years of a dog, return the dog years of a dog with a number
 ************************/
 
-function pupCalc(){
+exports.pupCalc = () => {
 
 }
 
@@ -18,7 +19,7 @@ function pupCalc(){
        "You will need N of T to last you until the ripe old age of X"
 ***********************/
 
-function lifetimeSupply(){
+exports.lifetimeSupply = () => {
 
 }
 
@@ -26,16 +27,6 @@ function lifetimeSupply(){
   Exercise 3: Write a function that accepts a string, and returns true if the string is a palindrome
 ***********************/
 
-function isPalindrome(){
+exports.isPalindrome = () => {
 
-}
-
-/************************
-  Ignore this below!
-************************/
-
-module.exports = {
-     lifetimeSupply: lifetimeSupply,
-     pupCalc: pupCalc,
-     isPalindrome: isPalindrome
 }

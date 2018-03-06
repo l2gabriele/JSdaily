@@ -1,4 +1,5 @@
-import poe from '../../resources/randomPoe.json';
+import poe from '../resources/randomPoe.json';
+const exports = module.exports = {};
 
 /************************
   Exercise 1: This function should take in a string that is a city name
@@ -7,7 +8,7 @@ import poe from '../../resources/randomPoe.json';
    string should be Title Cased, i.e.  ",doDge citY" -> "Dodge City"
 ************************/
 
-function titleCase(string){
+const titleCase = (string) => {
   return string;
 }
 
@@ -17,7 +18,7 @@ function titleCase(string){
   Your function should return an array with only the a words.
 ***********************/
 
-function alphaToPoe(poe){
+exports.alphaToPoe = (poe) => {
 
 }
 
@@ -43,16 +44,6 @@ function alphaToPoe(poe){
 
 ***********************/
 
-function numberFromBinary(binary){
+exports.numberFromBinary = (binary) => {
 
-}
-
-/************************
-  Ignore this below!
-************************/
-
-module.exports = {
-      titleCase: titleCase,
-     alphaToPoe: alphaToPoe,
-     numberFromBinary: numberFromBinary
 }

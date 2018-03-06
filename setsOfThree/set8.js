@@ -1,16 +1,15 @@
 import fetch from 'node-fetch';
-import deck from '../../resources/deck.json';
+import deck from '../resources/deck.json';
+const exports = module.exports = {};
 
 /************************
   Exercise 1: Pass a function a new date object and return a string of readable
   24 time. formatted -> hours:minutes:seconds
 ************************/
 
-function aintNobody(gotTimeForThat){
+exports.aintNobody = (gotTimeForThat) => {
 
 }
-
-// aintNobody();
 
 /***********************
   Exercise 2: for this exercise you will need:
@@ -27,7 +26,7 @@ function aintNobody(gotTimeForThat){
 
 ***********************/
 
-function whatsUrBestDay(){
+exports.whatsUrBestDay = () => {
 
 }
 
@@ -40,19 +39,6 @@ function whatsUrBestDay(){
   a percentage, number, i.e. 0.25.
 ***********************/
 
-function tresRando(){
+exports.tresRando = () => {
 
-};
-
-// uncomment to test
-// tresRando();
-
-/************************
-  Ignore this below!
-************************/
-
-module.exports = {
-     aintNobody: aintNobody,
-     whatsUrBestDay: whatsUrBestDay,
-     tresRando: tresRando
 }

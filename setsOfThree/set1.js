@@ -1,4 +1,4 @@
-import cities from '../../resources/cities.json';
+import cities from '../resources/cities.json';
 const exports = module.exports = {};
 
 /************************

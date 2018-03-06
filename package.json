@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run mocha",
-    "mocha:run": "mocha --compilers js:babel-core/register",
-    "mocha:daily": "mocha --compilers js:babel-core/register setsOfThree/set1/test.js",
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register test",
     "prototype:daily": "babel-node setsOfThree/set1/set1.js"
   },
   "repository": {
@@ -20,10 +18,8 @@
   },
   "homepage": "https://github.com/Montana-Code-School/JSdaily#readme",
   "devDependencies": {
-    "babel": "^6.23.0",
     "babel-core": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
     "babel-register": "^6.24.1",
     "body-parser": "^1.17.2",
     "chai": "^3.5.0",
@@ -35,8 +31,6 @@
   "dependencies": {
     "ajax-request": "^1.2.1",
     "babel-cli": "^6.24.1",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-2": "^6.24.1",
     "express": "^4.15.2",
     "node-fetch": "^1.7.0"
   }

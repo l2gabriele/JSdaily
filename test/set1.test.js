@@ -1,6 +1,6 @@
-var set1 = require('./set1');
+const set1 = require('../setsOfThree/set1');
 const chai = require('chai');
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('Set #1', function(){
   describe('returnWhatYearYouWereBorn', function(){
