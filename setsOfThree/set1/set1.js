@@ -8,8 +8,7 @@ const exports = module.exports = {};
 ************************/
 
 exports.returnWhatYearYouWereBorn = function(age){
-    let date = new Date();
-    return date.getFullYear() - age;
+
 };
 
 
@@ -20,21 +19,8 @@ exports.returnWhatYearYouWereBorn = function(age){
 ************************/
 
 exports.returnOnlyCitiesThatStartWith = function(theLetter){
-  console.log('start');
 
-  // return cities.filter((city, index, array) => {
-  //   if(city.city.slice(0,1).toLowerCase() === theLetter.toLowerCase()) {
-  //     return city;
-  //   }
-  // })
-
-  var retArr = [];
-  for(var index = 0; index < cities.length; index++) {
-    if(cities[index].city.slice(0,1).toLowerCase() === theLetter.toLowerCase()) {
-      retArr.push(cities[index]);
-    };
-  }
-  return retArr;
+  return [];
 };
 
 exports.returnOnlyCitiesThatStartWith("c");
