@@ -15,7 +15,7 @@ exports.returnWhatYearYouWereBorn = function(age){
 /************************
   Exercise 2:
   You should sort through the cities data set and return all the cities that begin with the letter c
-  this operation must be case insensitive
+  this operation must be case insensitive, bonus use <code>.filter</code>
 ************************/
 
 exports.returnOnlyCitiesThatStartWith = function(theLetter){
