@@ -16,24 +16,28 @@ describe('Set #5', function () {
     });
   });
 
-  describe('Exercise 3: Simple Calculator ', function(){
-    xit('should return an object', function(){
+  xdescribe('Exercise 3: Simple Calculator ', function(){
+    it('should return an object', function(){
       expect(set5.createCalc("divide", 4, 2)).to.be.an('object');
     });
+
+    it('should return an object length of three', function (){
+      expect(Object.keys(set5.createCalc("divide", 4, 2))).to.have.lengthOf(3);
+    })
 
     xit('the returned object should have the keys output and readable', function(){
       expect(set5.createCalc("divide", 4, 2)).to.have.all.keys('output', 'readable');
     });
 
-    xit('the calculations should be correct, i.e. 20 divided by 4 should equal 5', function(){
+    it('the calculations should be correct, i.e. 20 divided by 4 should equal 5', function(){
       expect(set5.createCalc("divide", 20, 4).output).to.eql(5);
     });
 
-    xit('if there is an an error present in the system the ouput should contain an err key', function(){
-      expect(set5.createCalc("divide", "d", 4)).to.have.key('err');
+    it('if there is an an error present in the system the output should return an err key', function(){
+      expect(set5.createCalc("divide", "d", 4)).to.be.key('err');
     });
 
-    xit('the returned object should have a human readable output that is a string', function(){
+    it('the returned object should have a human readable output that is a string', function(){
       expect(set5.createCalc("divide", 20, 4).readable).to.be.a('string');
     });
   });

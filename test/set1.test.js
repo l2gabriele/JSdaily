@@ -28,10 +28,10 @@ describe('Set #1', function(){
     it('The first city in the array should by Chicago',function() {
       expect(set1.returnOnlyCitiesThatStartWith('c')[0]).to.eql('Chicago');
     });
-    
+
   });
 
-  describe('returnSumOfPrimes',function(){
+  xdescribe('returnSumOfPrimes',function(){
     it('This function should return the sum of all primes below 200000',function() {
       expect(set1.returnSumOfPrimes(2000000)).to.eql(142913828922);
     });

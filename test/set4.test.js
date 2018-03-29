@@ -2,14 +2,14 @@ const set4 = require('../setsOfThree/set4');
 import chai from 'chai';
 const expect = chai.expect;
 
-xdescribe('Set #4', function(){
-  describe('Exercise 1: pupCalc', function(){
+describe('Set #4', function(){
+  xdescribe('Exercise 1: pupCalc', function(){
 
-    xit('should return a number', function(){
+    it('should return a number', function(){
       expect(set4.pupCalc(4)).to.be.a('number');
     });
 
-    xit('should return the age of your puppy in dog years', function(){
+    it('should return the age of your puppy in dog years', function(){
       expect(set4.pupCalc(4)).to.eql(28);
     });
 
@@ -23,19 +23,19 @@ xdescribe('Set #4', function(){
     });
 
     it('the returned object should have the keys year, total, and readable', function(){
-      expect(answer).to.have.all.keys('years', 'total', 'readable');
+      expect(Object.keys(answer)).to.eql(['years', 'total', 'readable']);
     });
 
     it('the year field should be equal to the total number of years yet to be lived', function(){
-      expect(answer.years).to.eql(55);
+      expect(answer.years).to.eql(61);
     });
 
     it('the total field should equal the total number of snacks to be consumed', function(){
-      expect(answer.total).to.eql(20075);
+      expect(answer.total).to.eql(22265);
     });
 
     it('the total field should equal the total number of snacks to be consumed', function(){
-      expect(answer.readable).to.be.an('string');
+      expect(answer.readable).to.eql( "You will need 22265 of candy BBAaaaaRRss to last you until the ripe old age of 90.");
     });
   });
 

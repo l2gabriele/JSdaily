@@ -10,7 +10,7 @@ const exports = module.exports = {};
 ************************/
 
 exports.getDigits = (number) => {
-
+  return number.toString().length;
 }
 
 /************************
@@ -21,7 +21,7 @@ exports.getDigits = (number) => {
 ************************/
 
 exports.zeroString = (string) => {
-
+  return string.split(" ").join(0);
 }
 
 /************************
@@ -35,5 +35,10 @@ exports.zeroString = (string) => {
 ************************/
 
 exports.flatten = (array) => {
-
+  function flatten(array) {
+    return array.reduce(function(flat, toFlatten) {
+      return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+    }, []);
+  }
+  return flatten(array);
 }

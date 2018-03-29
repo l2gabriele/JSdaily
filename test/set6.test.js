@@ -5,17 +5,17 @@ const expect = chai.expect;
 
 describe('Set #6', () => {
   describe('Exercise 1: Title Case', function(){
-    xit('This function must return a string', () => {
+    it('This function must return a string', () => {
       expect(set6.titleCase("/?doDge cItY,")).to.be.a("string");
     });
 
-    xit('The string should not contain any of the following: / ? ,', () => {
+    it('The string should not contain any of the following: / ? ,', () => {
       let patt = new RegExp(",/?");
       let res = patt.test(set6.titleCase("/?doDge cItY,"));
       expect(res).to.eql(false);
     });
 
-    xit('The first letters of the string should be capitalized', () => {
+    it('The first letters of the string should be capitalized', () => {
       expect(set6.titleCase("/?doDge cItY,").charAt(0)).to.eql("D");
     });
   });

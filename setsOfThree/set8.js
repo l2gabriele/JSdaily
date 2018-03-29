@@ -6,9 +6,15 @@ const exports = module.exports = {};
   Exercise 1: Pass a function a new date object and return a string of readable
   24 time. formatted -> hours:minutes:seconds
 ************************/
-
+//only parameter is a new Date object
 exports.aintNobody = (gotTimeForThat) => {
-
+return gotTimeForThat.toTimeString().split(' ').shift();
+//split removes spaces and returns an array
+//shift remove first element of the array and return it
+  //should return a string
+  //should return with a zero in front and maybe back
+  //string should be formatted -> hours, mins, seconds
+  //and be 8 characters
 }
 
 /***********************

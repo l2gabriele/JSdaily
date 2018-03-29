@@ -38,6 +38,18 @@ exports.isPalindrome = () => {
 
 ************************/
 
-exports.createCalc = () => {
-
+exports.createCalc = (string, num1, num2) => {
+  let calculator = {
+    output: '',
+    readable: '',
+    err: 'err',
+  };
+  let objArr = Object.keys(calculator).length;
+  console.log(objArr);
+  if (string === "divide") {
+    calculator.output = num1 / num2;
+    return calculator;
+  } else if ((typeof num1) !== "number" || (typeof num2) !== "number") {
+    return calculator.err;
+  }
 };

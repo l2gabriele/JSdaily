@@ -2,20 +2,20 @@ const set3 = require('../setsOfThree/set3');
 import chai from 'chai';
 const expect = chai.expect;
 
-xdescribe('Set #3', function(){
-  describe('Exercise 1: Never a question in my mind', function(){
+describe('Set #3', function(){
+  xdescribe('Exercise 1: Never a question in my mind', function(){
 
-    xit('should return a boolean', function(){
+    it('should return a boolean', function(){
       expect(set3.neverQuestion('string')).to.be.a('boolean');
     });
 
-    xit('if the string is a question it should return false', function(){
+    it('if the string is a question it should return false', function(){
       expect(set3.neverQuestion('string?')).to.eql(false);
     });
 
   });
 
-  describe('Exercise 2: Sk-werd Noombers', function(){
+  xdescribe('Exercise 2: Sk-werd Noombers', function(){
 
     it('should return a number', function(){
       expect(set3.sumSquareDiff(10)).to.be.a('number');
@@ -31,7 +31,7 @@ xdescribe('Set #3', function(){
 
   });
 
-  describe('Exercise 3: Royal', function(){
+  xdescribe('Exercise 3: Royal', function(){
     let set3Arr = set3.spadesRoyalStraightFlush();
     let pickOne = Math.floor((Math.random() * 5) + 1);
     it('should return a array', function(){

@@ -7,14 +7,14 @@ chai.should();
 chai.use(things);
 
 describe('Set #8', () => {
-  describe('Exercise 1: Should return the time', function(){
-    xit('Should take in a new date Object and return a formatted string', () => {
+  xdescribe('Exercise 1: Should return the time', function(){
+    it('Should take in a new date Object and return a formatted string', () => {
       expect(set8.aintNobody(new Date())).to.be.an("string");
     });
-    xit('Your string should be 8 chars long', () => {
+    it('Your string should be 8 chars long', () => {
       expect(set8.aintNobody(new Date()).length).to.eql(8);
     });
-    xit('If Split at the colons the first element should equal hours in a new date', () => {
+    it('If Split at the colons the first element should equal hours in a new date', () => {
       let d = new Date();
       expect(set8.aintNobody(d).split(":")[0]).to.eql(d.getHours());
     });

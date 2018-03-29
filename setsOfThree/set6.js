@@ -9,6 +9,10 @@ const exports = module.exports = {};
 ************************/
 
 const titleCase = (string) => {
+  let cityArr = string
+  .replace(/\//g,"")
+  .replace(/\.\?/g,"")
+  .map()
   return string;
 }
 

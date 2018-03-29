@@ -1,10 +1,10 @@
 {
   "name": "jsexercises",
   "version": "1.0.0",
-  "description": "",
+  "description": "These are javascript exercises gather from around the interwebs",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register test",
+    "test": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register test/set9.test.js",
     "prototype:daily": "babel-node setsOfThree/set1/set1.js"
   },
   "repository": {
@@ -32,6 +32,10 @@
     "ajax-request": "^1.2.1",
     "babel-cli": "^6.24.1",
     "express": "^4.15.2",
-    "node-fetch": "^1.7.0"
+    "node-fetch": "^1.7.0",
+    "npm": "^5.7.1"
+  },
+  "directories": {
+    "test": "test"
   }
 }
